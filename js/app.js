@@ -16,6 +16,11 @@ class Enemy {
         // which will ensure the game runs at the same speed for
         // all computers.
         this.x += this.speed * dt;
+
+        // Enemy reapperas on canvas after it exits it
+        if (this.x > 505) {
+            this.x = -100;
+        }
     }
 
     // Draw the enemy on the screen, required method for game
@@ -29,7 +34,7 @@ class Enemy {
 // This class requires an update(), render() and
 // a handleInput() method.
 
-class Player = {
+class Player {
     constructor(x, y) {
       this.x = x;
       this.y = y;
@@ -43,6 +48,7 @@ class Player = {
 
     update(dt) {
 
+
     }
 
     handleInput() {
@@ -54,13 +60,11 @@ class Player = {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-const rick = new Enemy();
-const owens = new Enemy();
-const brad = new Enemy();
 
-const allEnemies = [rick, owens, brad];
+const allEnemies = [new Enemy(0, 60, 95), new Enemy(-100, 143, 130), new Enemy(-50, 227, 125),
+                    new Enemy(-300, 60, 75), new Enemy(-200, 143, 110), new Enemy(-250, 227, 90)];
 
-const player = new Player();
+const player = new Player(200, 400);
 
 
 
