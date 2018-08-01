@@ -1,6 +1,28 @@
-frontend-nanodegree-arcade-game
-===============================
+# Arcade Game Project
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+FEND P4
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Table of Contents
+
+* [About](#about)
+* [How to play](#howtoplay)
+* [Dependancies](#dependancies)
+* [Contributing](#contributing)
+
+## About
+
+This project is a part of Google Udacity Front-End Developer Nanodegree.
+
+## How to play
+
+If you want to try out this game, download it and unzip. Open index.html file in your browser and enjoy.
+
+You are the princess which wants to go for a swim. But before river, there are ugly bugs which she is scared of. If she touches the bug, she flees back on her starting point. By pressing keys for up, down, right and left, try to avoid the bugs and bring her safely to the water.
+
+## Dependancies
+
+As a part of the Google Udacity FEND, a starter code for this project was used from: https://github.com/udacity/frontend-nanodegree-arcade-game
+
+## Contributing
+
+This project is a part of Google Udacity Nanodegree program. It serves for practicing and evaluating student's acquired knowledge and understanding. That is why pull requests (most likely) will _not_ be merged into the project. However, comments and any advice is highly welcomed.
