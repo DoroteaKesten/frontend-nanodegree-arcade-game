@@ -17,7 +17,7 @@ class Enemy {
         // all computers.
         this.x += this.speed * dt;
 
-        // Enemy reapperas on canvas after it exits it
+        // Enemy reapperas on canvas after exiting it
         if (this.x > 505) {
             this.x = -100;
         }
@@ -51,8 +51,23 @@ class Player {
 
     }
 
-    handleInput() {
-
+    handleInput(key) {
+        //Move right
+        if(key === "right" && this.x < 303) {
+            this.x += 101;
+        };
+        //Move left
+        if(key === "left" && this.x > 0) {
+            this.x -= 101;
+        };
+        //Move up
+        if(key === "up" && this.y > 0) {
+            this.y -= 82;
+        };
+        //Move down
+        if(key === "down" && this.y < 400) {
+            this.y += 82;
+        };
     }
 }
 
