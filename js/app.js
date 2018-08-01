@@ -33,7 +33,7 @@ class Enemy {
             player.y + 60 >= this.y) {
             player.resetPosition();
             console.log("Ouch!");
-        }
+        };
     }
 
     // Draw the enemy on the screen, required method for game
@@ -49,10 +49,10 @@ class Enemy {
 
 class Player {
     constructor(x, y) {
-      this.x = x;
-      this.y = y;
-      // The image/sprite for our player
-      this.sprite = 'images/char-princess-girl.png';
+        this.x = x;
+        this.y = y;
+        // The image/sprite for our player
+        this.sprite = 'images/char-princess-girl.png';
     }
     // Draw the player on the screen
     render() {
@@ -65,8 +65,8 @@ class Player {
     }
 
     resetPosition() {setTimeout(() => {
-          this.x = 200;
-          this.y = 400;
+            this.x = 200;
+            this.y = 400;
         }, 200);
     }
 
@@ -90,7 +90,9 @@ class Player {
         //When player reaches water
         if(this.y < 40) {
             this.resetPosition();
-            console.log ("Bravo!");
+            setTimeout(() => {
+                alert("Good job! You've reached the water.");
+            }, 100);
         };
     }
 
