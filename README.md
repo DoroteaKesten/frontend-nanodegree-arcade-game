@@ -17,7 +17,7 @@ This project is a part of Google Udacity Front-End Developer Nanodegree.
 
 If you want to try out this game, download it and unzip. Open index.html file in your browser and enjoy.
 
-You are the princess which wants to go for a swim. But before river, there are ugly bugs which she is scared of. If she touches the bug, she flees back on her starting point. By pressing keys for up, down, right and left, try to avoid the bugs and bring her safely to the water.
+You are the princess that wants to go for a swim. But before river, there are ugly bugs which she is scared of. If she touches the bug, she flees back on her starting point. By pressing keys for up, down, right and left, try to avoid the bugs and bring her safely to the water.
 
 ## Dependancies
 
