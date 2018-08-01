@@ -68,7 +68,15 @@ class Player {
         if(key === "down" && this.y < 400) {
             this.y += 82;
         };
+        //When player reaches water
+        if(this.y < 40) {setTimeout(() => {
+                this.x = 200;
+                this.y = 400;
+                console.log ("Bravo!");
+            }, 1000);
+        };
     }
+
 }
 
 
@@ -80,7 +88,6 @@ const allEnemies = [new Enemy(0, 60, 95), new Enemy(-100, 143, 130), new Enemy(-
                     new Enemy(-300, 60, 75), new Enemy(-200, 143, 110), new Enemy(-250, 227, 90)];
 
 const player = new Player(200, 400);
-
 
 
 // This listens for key presses and sends the keys to your
