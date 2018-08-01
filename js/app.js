@@ -21,6 +21,19 @@ class Enemy {
         if (this.x > 505) {
             this.x = -100;
         }
+
+        this.collision();
+    }
+
+    // Check checkCollision
+    collision() {
+        if (this.x <= player.x + 90 &&
+            this.x + 90 >= player.x &&
+            player.y <= this.y + 60 &&
+            player.y + 60 >= this.y) {
+            player.resetPosition();
+            console.log("Ouch!");
+        }
     }
 
     // Draw the enemy on the screen, required method for game
@@ -51,6 +64,12 @@ class Player {
 
     }
 
+    resetPosition() {setTimeout(() => {
+          this.x = 200;
+          this.y = 400;
+        }, 200);
+    }
+
     handleInput(key) {
         //Move right
         if(key === "right" && this.x < 303) {
@@ -69,11 +88,9 @@ class Player {
             this.y += 82;
         };
         //When player reaches water
-        if(this.y < 40) {setTimeout(() => {
-                this.x = 200;
-                this.y = 400;
-                console.log ("Bravo!");
-            }, 1000);
+        if(this.y < 40) {
+            this.resetPosition();
+            console.log ("Bravo!");
         };
     }
 
